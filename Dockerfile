@@ -9,5 +9,5 @@ RUN cargo build --release
 
 FROM alpine:latest
 WORKDIR /app
-COPY --from=builder /app/target/release/hello-world .
+COPY --from=builder /app/target/release/new-api-rs .
 CMD ["/app/hello-world"]
